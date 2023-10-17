@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pricing Page</title>
   </head>
-  <body class="bg-purple-100">
-    <div class="h-screen p-4 lg:p-8">
+  <body class="relative bg-purple-100">
+    <div class="p-4 lg:p-8">
       <div
         class="flex items-start justify-between lg:mx-auto lg:max-w-[1280px]"
       >
@@ -86,6 +86,23 @@
             Subscribe
           </button>
         </div>
+      </div>
+    </div>
+
+    <!-- modal -->
+    <div
+      id="modal"
+      class="pointer-events-none absolute left-0 right-0 top-0 flex h-full w-full items-start justify-center bg-black/70 opacity-0 duration-300"
+    >
+      <div class="mt-[150px] w-[90%] rounded-lg bg-white p-4">
+        <p>標題</p>
+        <p>內容</p>
+        <button
+          id="btn-close"
+          class="mt-4 w-full rounded-lg bg-primary py-3 text-lg tracking-wide text-white"
+        >
+          關閉
+        </button>
       </div>
     </div>
   </body>

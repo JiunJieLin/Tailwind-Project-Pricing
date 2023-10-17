@@ -1,4 +1,13 @@
 import "./index.css";
+const login = document.getElementById("login");
+const close = document.getElementById("btn-close");
+const modal = document.getElementById("modal");
+login.addEventListener("click", function () {
+  modal.classList.remove("pointer-events-none", "opacity-0");
+});
+close.addEventListener("click", function () {
+  modal.classList.add("pointer-events-none", "opacity-0");
+});
 const renderList = function (id) {
   const targetUl = document.getElementById(id);
   let svgColor = "text-primary";
