@@ -94,32 +94,46 @@
       id="modal"
       class="pointer-events-none absolute left-0 right-0 top-0 flex h-full w-full items-start justify-center bg-black/70 opacity-0 duration-300"
     >
-      <div class="mt-[150px] w-[90%] rounded-lg bg-white p-4">
-        <p>標題</p>
-        <p>內容</p>
+      <div class="mt-[150px] w-[90%] rounded-lg bg-white p-4 lg:w-[500px]">
+        <p class="my-4 text-center text-3xl font-medium">Login</p>
         <div class="mb-8">
           <label for="username">Username</label>
           <input
             type="text"
             name="username"
-            class="mt-1 h-[50px] w-full rounded-lg border-2 border-gray-300 px-3"
+            class="mt-1 h-[50px] w-full rounded-lg border-2 border-gray-300 px-3 focus:border-primary focus:ring-primary"
+          />
+        </div>
+        <div class="mb-8">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            class="mt-1 h-[50px] w-full rounded-lg border-2 border-gray-300 px-3 focus:border-primary focus:ring-primary"
           />
         </div>
         <div class="mb-8">
           <label for="region">Region</label>
           <select
             name="region"
-            class="mt-1 h-[50px] w-full rounded-lg border-2 border-gray-300 px-3"
+            class="mt-1 h-[50px] w-full rounded-lg border-2 border-gray-300 px-3 focus:border-primary focus:ring-primary"
           >
             <option value="TW">Taiwan</option>
             <option value="US">US</option>
           </select>
         </div>
+        <div class="mb-8 flex items-center">
+          <input
+            type="checkbox"
+            class="focus:text-primary focus:ring-primary"
+          />
+          <label for="checkbox" class="ml-2">Remember my password</label>
+        </div>
         <button
           id="btn-close"
           class="mt-4 w-full rounded-lg bg-primary py-3 text-lg tracking-wide text-white"
         >
-          關閉
+          Login
         </button>
       </div>
     </div>
